@@ -155,7 +155,7 @@
 
     <main id="main-area">
         <section id="service">
-            <h2 class="js_typing">慶應公認サークルTLA</h2>
+            <h2 class="js_typing">{{ $circle->name }}</h2>
             <div class="service-area">
                 <section class="bgextend bgLRextendTrigger">
                     <div class="bgappearTrigger">

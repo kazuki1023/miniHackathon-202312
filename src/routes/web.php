@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\CircleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,5 +32,11 @@ Route::middleware('auth')->group(function () {
 Route::get('/users', function () {
     return view('introduce.index');
 });
+
+Route::get('/edit', function () {
+    return view('edit');
+});
+
+Route::post('/update-circle', [CircleController::class, 'update']);
 
 require __DIR__.'/auth.php';
